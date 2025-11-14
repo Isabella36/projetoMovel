@@ -1,4 +1,4 @@
-# Projeto Móvel (Titulo do projeto) 
+# Projeto Móvel (ConectaFé) 
 
 Projeto da disciplina de programação de dispositivos móveis com ReactNative + Expo (Android)
 
