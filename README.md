@@ -83,6 +83,25 @@ meuappConectafe/
 │   ├── package.json
 │   ├── readme.md
 │   └── tsconfig.json
+├── dist
+│   ├── _expo
+│   ├── (tabs)
+│   ├── assets
+│   ├── src
+│   ├── _sitemap.html
+│   ├── +not-found.html
+│   ├── assetmap.json
+│   ├── donation-details.html
+│   ├── donation-requests.html
+│   ├── explore.html
+│   ├── favicon.icon
+│   ├── forgot-password.html
+│   ├── index.html
+│   ├── metadata.json
+│   ├── modal.html
+│   ├── new-donation-request.html
+│   ├── profile.html
+│   └── register.html
 ├── documentacao
 │   ├── 01_cartaDeApresentacao.pdf
 │   ├── 02_cartaDeAutorizacao.pdf
