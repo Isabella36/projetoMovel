@@ -30,36 +30,59 @@ Lembre-se que todas as instruções presentes neste arquivo devem permitir que o
 
 ## 🔧 Requisitos:
 
-- NodeJS LTS versão X.Y.Z
+- NodeJS LTS versão v22.18.0
 
-- React Native versão X.Y.Z
+- React Native versão 10.9.3
 
 - ExpoGo (link googlePlayStore) / (link applePlayStore)
 
-- Banco de dados: QUAL??? Por exemplo: SQLite. Especificar as tabelas criadas e utilizadas
+- Banco de dados: Firebase Firestore (NoSQL – Document Database)
+O Firestore é um banco orientado a documentos, onde dados são armazenados em coleções e documentos.
+No projeto utilizamos as seguintes coleções:
+
+1. users – Armazena os dados de cada usuário (nome, e-mail, tipo de conta, documento, admin etc.).
+2. donationRequests – Armazena todas as campanhas de doação, com título, descrição, categoria, cidade, prazo e autor da campanha.
+
+Cada documento dentro de uma coleção funciona como um registro contendo seus campos individuais.
 
 ### 🗃️ Tabela 'usuarios' com os seguintes campos:
-```
-id: UUID or int (primary key)
-timestamp: timestamp
-nomeCompleto: text (nullable)
-telefone: text (nullable)
-email: text (nullable)
-```
+Como o projeto utiliza Firebase Firestore (banco NoSQL), segue o equivalente das coleções em formato de tabelas SQL:
+id            : UUID (PRIMARY KEY)
+timestamp     : TIMESTAMP
+nomeCompleto  : TEXT
+telefone      : TEXT
+email         : TEXT
+tipoConta     : TEXT          -- ('doador' | 'igreja' | 'admin')
+documento     : TEXT          -- CPF ou CNPJ
+isAdmin       : BOOLEAN       -- apenas administradores
 
 ## 🔐 Configuração de acesso ao banco de dados
-```
-DATABASE_URL=https://backend_do_seu_projeto.com
-DATABASE_KEY=chave_de_acesso
-```
+O aplicativo utiliza Firebase Firestore (banco NoSQL em nuvem).
+A configuração equivalente ao padrão solicitado:
+
+DATABASE_URL=https://firestore.googleapis.com/v1/projects/meuapp-8a35f/databases/(default)/documents
+DATABASE_KEY=AIzaSyB0qK1St8cBpWEHqVTIND8IX3AEnhYo
 
 ## 📁 Estrutura do projeto:
-```
-nomeDoProjeto/
+meuappConectafe/
 ├── apresentacao
 │   ├── apresentacao.pdf
 │   └── apresentacao.pptx
 ├── backend
+│   ├── src
+│   ├── .cursor
+│   ├── .expo
+│   ├── .vscode 
+│   ├── app
+│   ├── node_modules
+│   ├── scripts
+│   ├── .gitignore
+│   ├── app.json
+│   ├── eslint.config.js
+│   ├── expo.env.d.ts
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── readme.md
 │   ├── src
 │   ├── .gitignore
 │   ├── readme.md
@@ -72,18 +95,17 @@ nomeDoProjeto/
 │   └── documentacao.md
 ├── frontend
 │   ├── assets
-│   ├── src
-│   ├── .gitignore
-│   ├── package.json
-│   ├── readme.md
-│   └── ...demais arquivos
+│   ├── componentes
+│   ├── constants
+│   ├── contexts
+│   ├── hooks
+│   └── scripts
 ├── video
 │   ├── apresentacao.gif
 │   ├── apresentacao.mkv
 │   ├── apresentacao.mp4
 │   └── video.txt  O conteúdo deste arquivo deve ser o local público onde está o vídeo caso tenha mais de 10MB
-└── readme.md  Este arquivo é uma visão geral do projeto e não precisa ser idêntico a este arquivo
-```
+└── readme.md
 
 ## 📦 Instale os requisitos do projeto:
 
