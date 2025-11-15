@@ -8,11 +8,11 @@ A solução compartilhada neste repositório consiste no desenvolvimento de uma 
 
 ## Equipe do projeto
 
-Matrícula - NomeCompleto1
+202503832251 - Fabricio Luis Costa Barreto Soares  
 
-Matrícula - NomeCompleto2
+202302378961 - Isabella Martins de Souza 
 
-Matrícula - NomeCompleto3
+202308508261 - Matheus Barros Souza
 
 ## Sumário
 
