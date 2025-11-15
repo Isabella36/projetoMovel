@@ -69,7 +69,6 @@ meuappConectafe/
 │   ├── apresentacao.pdf
 │   └── apresentacao.pptx
 ├── backend
-│   ├── src
 │   ├── .cursor
 │   ├── .expo
 │   ├── .vscode 
@@ -83,10 +82,7 @@ meuappConectafe/
 │   ├── package-lock.json
 │   ├── package.json
 │   ├── readme.md
-│   ├── src
-│   ├── .gitignore
-│   ├── readme.md
-│   └── ...demais arquivos
+│   └── tsconfig.json
 ├── documentacao
 │   ├── 01_cartaDeApresentacao.pdf
 │   ├── 02_cartaDeAutorizacao.pdf
@@ -104,7 +100,7 @@ meuappConectafe/
 │   ├── apresentacao.gif
 │   ├── apresentacao.mkv
 │   ├── apresentacao.mp4
-│   └── video.txt  O conteúdo deste arquivo deve ser o local público onde está o vídeo caso tenha mais de 10MB
+│   └── video.txt  
 └── readme.md
 
 ## 📦 Instale os requisitos do projeto:
@@ -147,6 +143,12 @@ Tela 2: criacao de usuario
 
 Tela 3: recuperacao de senha
 
-Tela 4: tela inicial
+Tela 4: tela inicial 
 
-...e assim por diante
+Tela 5: campanhas em aberto
+
+Tela 6: Igreja edita ou exclui campanha
+
+Tela 7: igreja cria nova campanha
+
+Tela 8: doador escolhe campanha para doação
