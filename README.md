@@ -34,7 +34,9 @@ Lembre-se que todas as instruções presentes neste arquivo devem permitir que o
 
 - React Native versão 10.9.3
 
-- ExpoGo (link googlePlayStore) / (link applePlayStore)
+- ExpoGo: (necessário para rodar o aplicativo)
+- Android (Google Play Store): https://play.google.com/store/apps/details?id=host.exp.exponent
+- iOS (Apple App Store): https://apps.apple.com/app/expo-go/id982107779
 
 - Banco de dados: Firebase Firestore (NoSQL – Document Database)
 O Firestore é um banco orientado a documentos, onde dados são armazenados em coleções e documentos.
